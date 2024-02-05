@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bihar Tourism</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+        }
+        #navbar::before{
+            content: "";
+            background: transparent;
+            position: absolute;
+            height: 100%;
+            width:100%;
+            z-index: -1;
+        }
+        .logo{
+            margin: 0px 4px;
+        }
+        .logo img{
+            height: 140px;
+            margin: 3px 6px;
+            background-color: black;
+        }
+        .logo div{
+            padding-left: 10px;
+            font-weight: bold;
+        }
+        #navbar ul{
+            display: flex;
+            font-family: 'Abril Fatface', cursive;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size:20px;
+            font-weight: bold;
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            color: black;
+            padding: 3px 22px;
+            display: block;
+            border-radius: 20px;
+            font-size: 23px;
+        }
+    
+        #navbar ul li a:hover{
+            color: red;
+        }
+        #background-image {
+            position: fixed;
+            bottom: 0;
+            height: 100vh;
+            width: 100vw;
+        }
+        header {
+            background-color: transparent;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+        }
+        .city{
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="allthings">
+        <img id = "background-image" src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/takht_sri_harmandir_sahib/Takhat-shri-Harimandir-ji.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt ="">
+
+    <header>
+        <nav id="navbar">
+            <div class="logo">
+                <img src="bihar logo.png" alt="">
+            </div>
+            <ul>
+                <li class = "items"><a href="">Home</a></li>
+                <li class = "items"><a href="heritagesites.html">Heritage Sites</a></li>
+                <li class = "items"><a href="hotel.html">Hotel Booking</a></li>
+                <li class = "items"><a href="Gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+        <div class="city">
+            <h1>Bihar</h1>
+        </div>
+    </header>
+</div>
+
+
+
+
+</body>
+</html>

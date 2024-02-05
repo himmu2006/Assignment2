@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 5px;
+        font-size: 20px;
+    }
+    span{
+        color: red;
+    }
+    body,html{
+        height: 100%;
+    }
+    .hotel{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    fieldset{
+        width: 600px;
+        border-radius: 10px;
+    }
+    legend{
+        font-size: 30px;
+        text-align: center;
+        color: green;
+    }
+    .down{
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+        margin-right: 100px;
+        gap: 20px;
+    }
+    .bg {
+        background-image: url("80 feet Buddha.jpg");
+        height: 100%;
+        opacity: 0.5;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .down input{
+        border-radius: 10px;
+    }
+    .down input:hover{
+        color: white;
+        background-color: green;
+    }
+</style>
+<body>
+    <div class="bg">
+        <div class="hotel">
+
+    <fieldset>
+        <legend>Hotel Booking Form</legend>
+        <form action="">
+            <label for="fname">Name <span>*</span>:</label><br>
+            <input type="text" name = "fname" placeholder="First">
+
+            <input type="text" name = "fname" placeholder="Last">
+
+            <br>
+            <label for="add">Address<span>*</span>:</label>
+            <br>
+            <input type="text" name = "add" placeholder="Street Address">
+            <br>
+            <input type="text" name = "add" placeholder="Street Address Line 2">
+            <br>
+            <input type="text" name = "add" placeholder="City">
+            <input type="text" name = "add" placeholder="Region">
+            
+            <br>
+            <input type="number" name = "add" placeholder="Postal/Zip Code">
+            <select name="country">
+                <option value="ps">Country</option>
+                <option value="sr">Afghanistan</option>
+                <option value="tr">Australia</option>
+                <option value="dr">Austria</option>
+                <option value="ps">Argentina</option>
+                <option value="sr">Bahrain</option>
+                <option value="tr">Bangladesh</option>
+                <option value="dr">Belgium</option>
+                <option value="ps">Bhutan</option>
+                <option value="sr">Brazil</option>
+                <option value="tr">Canada</option>
+                <option value="dr">China</option>
+                <option value="ps">Denmark</option>
+                <option value="sr">India</option>
+                <option value="tr">Iran</option>
+                <option value="dr">Japan</option>
+                <option value="ps">Kuwait</option>
+                <option value="sr">Malaysia</option>
+                <option value="tr">Sri Lanka</option>
+                <option value="dr">New Zealand</option>
+            </select>
+
+            <br>
+            <label for="mail">Email Address<span>*</span>:</label>
+            <br>
+            <input type="email" name = "mail">
+
+            <br>
+            <label for="num">Phone Number<span>*</span>:</label>
+            <br>
+            <input type="number" name = "num" placeholder="### ### ####">
+        
+            <br>
+                <label for="dt">Check-in Date    <span>*</span>:&emsp;</label>
+
+                <label for="dt">Check-out Date<span>*</span>:</label>
+                <br>
+                <input type="date" name = "dt">
+                <input type="date" name = "dt">
+
+            <br>
+            <label for="na">Number of adults &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <label for="na">Number of children</label>
+            <br>
+            <input type="number" name = "na">
+            <input type="number" name = "na">
+
+            <br>
+            <label for="room">Room preference</label>
+            <br>
+            <select name="room">
+                <option value="ps">Please Select</option>
+                <option value="sr">Single Room</option>
+                <option value="tr">Twin Room</option>
+                <option value="dr">Double Room</option>
+            </select>
+            <br>
+            <div class = "down">
+                <input type="submit" value = "Book Now">
+                <input type="reset">
+            </div>
+
+        </form>
+    </fieldset>
+    </div>
+    </div>
+</body>
+</html>

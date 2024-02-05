@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+        .gallery{
+            display: flex;
+            justify-content: center;
+        }
+        .gallery h1{
+            font-size: 90px;
+            font-family: 'Caveat', cursive;
+            margin: 0px;
+        }
+        .image{
+            position: relative;
+            display: inline-block;
+        }
+        .image img{
+            width: 320px;
+            height: 240px;
+            padding: 20px;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .image img:hover{
+            border-radius: 20px;
+            cursor: pointer;
+            opacity: 0.7;
+            z-index: 4;
+        }
+
+        .text-overlay{
+            position: absolute;
+            top: 69%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center; /* Semi-transparent black background for better text visibility */
+            padding: 10px; /* Add padding to improve text readability */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <h1>Gallery</h1>
+    </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/bodh-gaya/80%20feet%20Buddha.jpg" alt="">
+            <div class="text-overlay">80 Feet Buddha</div>
+        </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/gaya/mahabodhi_temple/13.-Mahabodhi-Temple_Bodh-Gaya.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt="">
+            <div class="text-overlay">Mahabodhi Temple</div>
+        </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/golghar/06.-Gol-Ghar.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt="">
+            <div class="text-overlay">Golghar</div>
+        </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/nalanda/shanti_stupa/03.-Vishwa-Shanti-Stupa_Rajgir.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt="">
+            <div class="text-overlay">Vishwa Shanti Stupa</div>
+        </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/mahavir_mandir/mahaveer-mandir.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt="">
+            <div class="text-overlay">Mahavir Mandir</div>
+        </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/maner_sharief/maner-sharif.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt="">
+            <div class="text-overlay">Maner Sharif</div>
+        </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/patna/takht_sri_harmandir_sahib/Takhat-shri-Harimandir-ji.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt="">
+            <div class="text-overlay">Takhat Shri Harimandir Ji Patna Sahib</div>
+        </div>
+        <div class="image">
+            <img src="https://tourism.bihar.gov.in/content/dam/bihar-tourism/images/category_a/vaishali/ashokan_pillar__kolhua_vaishali/ashokan-pillar.jpg/jcr:content/renditions/cq5dam.web.1280.765.jpeg" alt="">
+            <div class="text-overlay">Ashokan Pillar</div>
+        </div>
+    
+    
+    </div>
+</body>
+</html>

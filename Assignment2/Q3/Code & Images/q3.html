@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #navbar{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            top: 0px;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            top:0px;
+            left:0px;
+            height: 100%;
+            width:100%;
+            z-index: -1;
+        }
+        #navbar ul{
+            display: flex;
+            font-family: 'Abril Fatface', cursive;
+        }
+        #navbar ul li{
+            list-style: none;
+            font-size:20px;
+            font-weight: bold;
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            color: white;
+            padding: 15px 50px;
+            display: block;
+            border-radius: 20px;
+            font-size: 34px;
+        }
+    
+        #navbar ul li a:hover{
+            color: red;
+        }
+
+
+        .bd::before{
+            content: "";
+            background-image: url('rece.jpg');
+            background-attachment: fixed;
+            position: absolute;
+            background-size: cover;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 100vw;
+            z-index: -1;
+        }
+
+        #para p{
+            font-size: 100px;
+            text-align: center;
+            justify-content: center;
+            padding: 250px;
+            color: white;
+        }
+        .para1 p{
+            font-size: 100px;
+            text-align: center;
+            justify-content: center;
+            padding: 250px;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+        
+        <nav id = "navbar">
+        <div>
+            <ul>
+                <li class = "items"><a href="breakfast.html">Breakfast</a></li>
+                <li class = "items"><a href="lunch.html">Lunch</a></li>
+                <li class = "items"><a href="dinner.html">Dinner</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bd">
+        
+    </div>
+    <div id="para">
+        <p>Healthy Recipes</p>
+    </div>
+    </div>
+
+
+
+</body>
+</html>
